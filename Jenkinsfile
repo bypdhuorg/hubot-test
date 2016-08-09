@@ -1,5 +1,6 @@
-def pipelineRepo = 'https://github.com/eedevops/he-jenkins-ci.git'
-def pipeline = fileLoader.fromGit('integration-flow',
-    pipelineRepo, 'master', null, '')
-
-pipeline.runPipeline(pipelineRepo, false)
+node {
+   stage 'Stage 1'
+   echo 'Hello World 1'
+   stage 'Stage 2'
+   echo 'Hello World 2'
+}
